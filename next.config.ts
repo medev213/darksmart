@@ -71,27 +71,13 @@ const nextConfig: NextConfig = {
     ]
   },
 
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.optimization = {
-        ...config.optimization,
-        splitChunks: {
-          chunks: "all",
-          cacheGroups: {
-            default: false,
-            vendors: false,
-            vendor: {
-              filename: "chunks/vendor.js",
-              test: /node_modules/,
-              priority: 10,
-              reuseExistingChunk: true,
-              name: "vendor",
-            },
-          },
-        },
-      }
-    }
-    return config
+  turbo: {
+    rules: {
+      "*.svg": {
+        loaders: ["@svgr/webpack"],
+        as: "*.js",
+      },
+    },
   },
 
   typescript: {

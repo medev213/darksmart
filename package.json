@@ -1,0 +1,46 @@
+{
+  "name": "darksmart-cloud-api",
+  "version": "1.0.0",
+  "description": "DarkSmart Cloud Smart Home Platform - Backend API",
+  "type": "module",
+  "main": "server/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm server/index.ts",
+    "init-db": "node scripts/init-database.js",
+    "lint": "eslint .",
+    "start": "node server/index.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "latest",
+    "axios": "latest",
+    "bcryptjs": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cors": "latest",
+    "crypto": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "latest",
+    "lucide-react": "^0.454.0",
+    "mqtt": "^5.3.0",
+    "next": "16.0.0",
+    "node-cron": "latest",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "postcss": "^8.5",
+    "tailwindcss": "4.1.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}

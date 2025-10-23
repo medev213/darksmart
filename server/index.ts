@@ -1,9 +1,9 @@
-import app from "@/server/app"
-import oauthRoutes from "@/server/routes/oauth"
-import fulfillmentRoutes from "@/server/routes/fulfillment"
-import { rateLimit } from "@/server/middleware/rate-limit"
-import { corsMiddleware } from "@/server/middleware/cors"
-import { AutomationScheduler } from "@/server/services/scheduler"
+import app from "./app.js"
+import oauthRoutes from "./routes/oauth.js"
+import fulfillmentRoutes from "./routes/fulfillment.js"
+import { rateLimit } from "./middleware/rate-limit.js"
+import { corsMiddleware } from "./middleware/cors.js"
+import { AutomationScheduler } from "./services/scheduler.js"
 
 const PORT = process.env.PORT || 5050
 

@@ -26,6 +26,7 @@
     "lucide-react": "^0.454.0",
     "mqtt": "^5.3.0",
     "next": "16.0.0",
+    "next-themes": "latest",
     "node-cron": "latest",
     "react": "19.2.0",
     "react-dom": "19.2.0",

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "latest",
+    "@radix-ui/react-slot": "latest",
     "axios": "latest",
     "bcryptjs": "latest",
     "class-variance-authority": "^0.7.1",
